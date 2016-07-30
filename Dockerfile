@@ -1,12 +1,13 @@
 FROM andrewosh/binder-base
 
-MAINTAINER Jeremy Freeman <freeman.jeremy@gmail.com>
+MAINTAINER Shreyas Cholia <scholia@lbl.gov>
 
 USER root
 
-# Add dependency
-RUN apt-get update
-RUN apt-get install -y graphviz
+EXPOSE 8888
+EXPOSE 5000
+EXPOSE 5001
+EXPOSE 5002
 
 USER main
 
